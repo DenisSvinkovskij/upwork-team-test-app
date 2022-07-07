@@ -1,0 +1,97 @@
+@import url(./components/ScoreInfo/ScoreInfo.css);
+@import url(./components/Button/Button.css);
+
+.App {
+  min-height: 100vh;
+  background: #e5e5e5;
+}
+
+.App-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.change-position-banner {
+  max-width: 320px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10000000000000000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+}
+
+.marker {
+  width: 15px;
+  height: 15px;
+  border-radius: 0 50% 50% 50%;
+  border: 2px solid black;
+  transform: rotate(-135deg);
+  cursor: pointer;
+}
+
+.marker.black {
+  background-color: black;
+}
+.marker.gray {
+  background-color: gray;
+}
+.marker.red {
+  background-color: red;
+}
+.marker.orange {
+  background-color: orange;
+}
+.marker.lime {
+  background-color: lime;
+}
+.marker.green {
+  background-color: green;
+}
+
+.popup-container {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  max-width: 320px;
+}
+
+.popup-close {
+  position: absolute;
+  top: -0.25rem;
+  right: 0;
+}
+
+.popup-score {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popup-action-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.popup-action {
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid;
+}
+
+.popup-delete {
+  grid-column: span 2;
+}
+
+.map-download-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 0.5rem;
+  z-index: 1000000;
+}

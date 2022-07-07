@@ -1,0 +1,10 @@
+.score-info-container {
+  max-width: 320px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10000000000000000;
+  top: 1rem;
+  right: 1rem;
+}
